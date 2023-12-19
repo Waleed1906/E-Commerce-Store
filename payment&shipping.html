@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gradient-to-r from-purple-400 to-pink-600">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4">
+          <nav class="bg-black-700 shadow-lg">
+            <div class="container mx-auto px-4">
+              <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                  <a href="#" class="text-white text-lg font-bold">RK STORE</a>
+                  <div class="ml-4 flex items-center">
+                    <a href="/landingpage.html" class="text-white hover:text-gray-300 px-3 py-2 rounded-lg">Home</a>
+                    <a href="/products.html" class="text-white hover:text-gray-300  px-3 py-2 rounded-lg">Products</a>
+                    <a href="/about.html" class="text-white hover:text-gray-300 px-3 py-2 rounded-lg">About</a>
+                    <a href="/contact.html" class="text-white hover:text-gray-300 px-3 py-2 rounded-lg">Contact</a>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <a href="/cart.html" class="text-white hover:text-gray-300 px-3 py-2 rounded-lg">Cart</a>
+                  <a href="sign-in.html" class="text-white hover:text-gray-300 px-3 py-2 rounded-lg">Login</a>
+                  <a href="/sign-up.html" class="text-white hover:text-gray-300 px-3 py-2 rounded-lg">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          
+        </div>
+      </header>
+    <div class="max-w-md mx-auto mt-10 bg-white p-6 rounded-md shadow-md">
+        <div>
+            <h1 class="text-2xl font-semibold mb-4">Shipping Details</h1>
+        </div>
+        <form>
+            <div class="mb-6">
+                <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                <input class="w-full px-3 py-2 text-gray-700 border rounded" id="name" type="text" placeholder="John Doe">
+            </div>
+            <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                <input class="w-full px-3 py-2 text-gray-700 border rounded" id="email" type="email" placeholder="johndoe@example.com">
+            </div>
+            <div class="mb-6">
+                <label for="address" class="block text-gray-700 font-semibold mb-2">Address</label>
+                <input class="w-full px-3 py-2 text-gray-700 border rounded" id="address" type="text" placeholder="123 Main St">
+            </div>
+            <div class="mb-6 flex justify-between">
+                <div>
+                    <label for="city" class="block text-gray-700 font-semibold mb-2">City</label>
+                    <input class="w-48 px-3 py-2 text-gray-700 border rounded" id="city" type="text" placeholder="San Francisco">
+                </div>
+                <div>
+                    <label for="state" class="block text-gray-700 font-semibold mb-2">State</label>
+                    <input class="w-32 px-3 py-2 text-gray-700 border rounded" id="state" type="text" placeholder="CA">
+                </div>
+                <div>
+                    <label for="zip" class="block text-gray-700 font-semibold mb-2">ZIP Code</label>
+                    <input class="w-32 px-3 py-2 text-gray-700 border rounded" id="zip" type="text" placeholder="12345">
+                </div>
+            </div>
+            <div class="mb-6">
+                <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                <input class="w-full px-3 py-2 text-gray-700 border rounded" id="phone" type="tel" placeholder="(555) 555-5555">
+            </div>
+            <div class="flex justify-end">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Save and Continue</button>
+            </div>
+        </form>
+    </div>
+    <div class="max-w-md mx-auto mt-10 bg-white p-6 rounded-md shadow-md">
+        <div>
+            <h1 class="text-2xl font-semibold">Enter Payment Details</h1>
+        </div>
+        <div class="mt-8">
+            <form>
+                <div class="mb-6">
+                    <label for="card-number" class="block text-gray-700 font-semibold mb-2">Card Number</label>
+                    <input class="w-full px-3 py-2 text-gray-700 border rounded" id="card-number" type="text" placeholder="1234 5678 9101 1121">
+                </div>
+                <div class="mb-6 flex justify-between">
+                    <div>
+                        <label for="expiry-date" class="block text-gray-700 font-semibold mb-2">Expiry Date</label>
+                        <input class="w-24 px-3 py-2 text-gray-700 border rounded" id="expiry-date" type="text" placeholder="MM/YY">
+                    </div>
+                    <div>
+                        <label for="cvc" class="block text-gray-700 font-semibold mb-2">CVC</label>
+                        <input class="w-24 px-3 py-2 text-gray-700 border rounded" id="cvc" type="text" placeholder="CVC">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mt-8">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"><a href="thankyou.html">Pay Now</button>
+                    <p class="text-gray-600 text-sm">Secure payment provided by <span class="font-bold">Stripe</span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-1/3 lg:w-1/4 mb-4">
+              <h3 class="text-xl text-white font-bold mb-4">RK STORE</h3>
+              <p class="text-gray-300 mb-4">Explore a world of enchantment with our collection of magical products.</p>
+              <p class="text-gray-300">&copy; 2023 RK STORE. All rights reserved.</p>
+            </div>
+            <div class="w-full md:w-1/3 lg:w-1/4 mb-4">
+              <h3 class="text-xl text-white font-bold mb-4">Quick Links</h3>
+              <ul>
+                <li><a href="landingpage.html" class="text-gray-300 hover:text-gray-400">Home</a></li>
+                <li><a href="products.html" class="text-gray-300 hover:text-gray-400">Products</a></li>
+                <li><a href="about.html" class="text-gray-300 hover:text-gray-400">About</a></li>
+                <li><a href="contact.html" class="text-gray-300 hover:text-gray-400">Contact</a></li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/3 lg:w-1/4 mb-4">
+              <h3 class="text-xl text-white font-bold mb-4">Customer Support</h3>
+              <ul>
+                <li><a href="#" class="text-gray-300 hover:text-gray-400">FAQs</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-gray-400">Shipping & Returns</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-gray-400">Privacy Policy</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-gray-400">Terms of Service</a></li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/3 lg:w-1/4 mb-4">
+              <h3 class="text-xl text-white font-bold mb-4">Stay Connected</h3>
+              <p class="text-gray-300 mb-4">Follow us on social media for updates and special offers:</p>
+              <div class="flex">
+                <a href="#" class="text-gray-300 hover:text-gray-400 mr-4"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-gray-300 hover:text-gray-400 mr-4"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-300 hover:text-gray-400 mr-4"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

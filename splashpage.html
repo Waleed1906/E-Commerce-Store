@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash Screen - RK STORE</title>
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .splash-screen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #ffffff;
+    }
+    .splash-logo {
+      animation: fadeOut 3s ease-in-out;
+    }
+  </style>
+  <script>
+    setTimeout(function() {
+      window.location.href = "sign-in.html";
+    }, 4000);
+  </script>
+</head>
+
+<body>
+  <div class="splash-screen">
+    <img src="https://t3.ftcdn.net/jpg/03/44/12/18/360_F_344121863_WAdMcMmHP1HKEKRc38432cY1rxni9LxW.jpg" alt="Magical Shop Logo" class="splash-logo">
+  </div>
+</body>
+
+</html>
